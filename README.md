@@ -1,4 +1,4 @@
-# Capstone Project: React Minesweeper
+# Minesweeper: Studi Kasus Pengembangan React dengan Bantuan AI (IBM Granite)
 
 ## Deskripsi
 
