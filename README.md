@@ -30,7 +30,7 @@ Untuk menjalankan proyek ini secara lokal:
 
 1.  Clone repositori ini:
     ```bash
-    git clone [URL_GITHUB_ANDA]
+    git clone https://github.com/loudersyoakim/minesweeper-capstone
     ```
 2.  Masuk ke direktori proyek:
     ```bash
