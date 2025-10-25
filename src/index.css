@@ -1,0 +1,166 @@
+/* Reset & Basic Setup */
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  /* BG CANTIK: Gradien langit/rumput yang halus */
+  background: #ffffff;
+  background-attachment: fixed;
+  margin: 0;
+  user-select: none;
+}
+
+/* Kontainer utama - tema kayu/tanah */
+.game-container {
+  border: 4px solid #5d4037; /* Coklat tua */
+  background-color: #efebe9; /* Krem muda */
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.25);
+  /* Tambahkan ini agar High Score tidak keluar */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Header */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #d7ccc8; /* Krem sedikit lebih gelap */
+  border: 3px solid;
+  border-color: #f7f3f2 #b0a4a0 #b0a4a0 #f7f3f2;
+  padding: 10px;
+  margin-bottom: 10px;
+  width: 100%; /* Pastikan header mengisi lebar */
+  box-sizing: border-box; /* Agar padding tidak menambah lebar */
+}
+
+/* --- STYLE BARU --- */
+.stat-group {
+  display: flex;
+  gap: 10px; /* Jarak antar stat */
+}
+/* ------------------ */
+
+/* Tampilan stat (timer/mine) - seperti layar LCD di alat */
+.stat {
+  font-family: "Courier New", Courier, monospace;
+  font-size: 1.5rem;
+  font-weight: bold;
+  background-color: #ffffff; /* Latar LCD gelap */
+  color: #ff0000; /* Teks hijau muda */
+  padding: 5px 10px;
+  border: 2px solid #ffffff;
+  border-radius: 3px;
+  min-width: 100px;
+  text-align: center;
+
+  /* Membuat emoji dan angka sejajar */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px; /* Jarak antara emoji dan angka */
+}
+
+.controls {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.reset-button,
+select {
+  font-size: 1.5rem;
+  width: 45px;
+  height: 45px;
+  border: 3px solid;
+  border-color: #f7f3f2 #b0a4a0 #b0a4a0 #f7f3f2;
+  background-color: #d7ccc8;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+}
+.reset-button:active {
+  border-color: #b0a4a0 #f7f3f2 #f7f3f2 #b0a4a0;
+}
+select {
+  font-size: 1rem;
+  padding: 5px;
+  width: auto;
+}
+
+/* Papan Permainan */
+.board {
+  display: grid;
+  border: 3px solid;
+  border-color: #b0a4a0 #f7f3f2 #f7f3f2 #b0a4a0;
+}
+
+.board.game-over .cell {
+  pointer-events: none; /* Nonaktifkan klik saat game over */
+}
+
+/* --- TEMA SEL (RUMPUT & TANAH) --- */
+
+.cell {
+  width: 30px;
+  height: 30px;
+  /* Ini adalah RUMPUT (belum dibuka) */
+  background-color: #8bc34a; /* Hijau rumput */
+  border: 3px solid;
+  border-color: #c5e1a5 #689f38 #689f38 #c5e1a5; /* Efek 3D rumput */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.2rem;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+/* Ini adalah TANAH (sudah dibuka) */
+.cell.revealed {
+  border: 1px solid #6d4c41; /* Coklat tua */
+  background-color: #a1887f; /* Coklat tanah galian */
+}
+
+/* Sel ranjau yang meledak */
+.cell.mine.revealed {
+  background-color: #e57373; /* Latar merah saat meledak */
+}
+
+.cell.flagged {
+  font-size: 1.5rem;
+  /* Biarkan background-nya hijau rumput */
+}
+
+/* Warna untuk angka (dibuat agar kontras dengan tanah) */
+.cell.n1 {
+  color: #000000;
+} /* Biru */
+.cell.n2 {
+  color: #388e3c;
+} /* Hijau tua */
+.cell.n3 {
+  color: #d32f2f;
+} /* Merah */
+.cell.n4 {
+  color: #7b1fa2;
+} /* Ungu */
+.cell.n5 {
+  color: #f57c00;
+} /* Oranye */
+.cell.n6 {
+  color: #0097a7;
+} /* Cyan */
+.cell.n7 {
+  color: #000000;
+} /* Hitam */
+.cell.n8 {
+  color: #616161;
+} /* Abu-abu */
