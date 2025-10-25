@@ -1,5 +1,5 @@
 import React from "react";
-import "./WinPopup.css";
+import "./winpopup.css";
 
 const WinPopup = () => {
   return (
