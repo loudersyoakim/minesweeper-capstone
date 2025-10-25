@@ -1,8 +1,8 @@
 import React, { useState, useEffect, useMemo } from "react";
 import Header from "./components/header";
 import Board from "./components/board";
-import WinPopup from "./components/WinPopup"; // <-- IMPORT BARU
-import HighScores from "./components/HighScores"; // <-- IMPORT BARU
+import WinPopup from "./components/winpopup"; 
+import HighScores from "./components/highscores"; // <-- IMPORT BARU
 import {
   createBoard,
   revealCell,
