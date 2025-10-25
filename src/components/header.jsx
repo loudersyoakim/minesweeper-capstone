@@ -10,7 +10,7 @@ const Header = ({
   gameState,
 }) => {
   const getEmoji = () => {
-    if (gameState === "won") return "🏆";
+    if (gameState === "won") return "↻";
     if (gameState === "lost") return "↻";
     return "↻";
   };
