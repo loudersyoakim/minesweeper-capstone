@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import "./HighScores.css";
+import "./highscores.css";
 
 const HighScores = ({ currentDifficulty }) => {
   const [topScores, setTopScores] = useState([]);
