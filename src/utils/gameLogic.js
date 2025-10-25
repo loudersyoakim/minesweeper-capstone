@@ -2,7 +2,7 @@
 export const DIFFICULTY_SETTINGS = {
   newbie: { rows: 10, cols: 15, mines: 10 },
   intermediate: { rows: 15, cols: 15, mines: 25 },
-  pro: { rows: 15, cols: 30, mines: 50 },
+  pro: { rows: 15, cols: 30, mines: 99 },
 };
 
 // Fungsi untuk membuat sel individual
