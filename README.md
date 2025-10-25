@@ -16,12 +16,12 @@ Sebuah implementasi klasik dari game Minesweeper yang dibuat menggunakan React. 
 
 - **Gameplay Klasik:** Klik untuk mengungkap sel, klik kanan untuk menandai bendera.
 - **Tiga Tingkat Kesulitan:**
-  - **Newbie:** Papan 9x9 dengan 10 ranjau.
-  - **Intermediate:** Papan 16x16 dengan 40 ranjau.
-  - **Pro:** Papan 16x30 dengan 99 ranjau.
+  - **Newbie:** Papan 10x15 dengan 10 ranjau.
+  - **Intermediate:** Papan 15x15 dengan 25 ranjau.
+  - **Pro:** Papan 15x30 dengan 99 ranjau.
 - **Timer:** Menghitung waktu permainan dari klik pertama.
 - **Mine Counter:** Menampilkan sisa ranjau (total ranjau dikurangi bendera).
-- **Tombol Reset:** Memulai ulang permainan dengan emoji yang berubah sesuai status (bermain, menang, kalah).
+- **Tombol Reset:** Memulai ulang permainan dengan 
 - **Logika Kemenangan/Kekalahan:** Game otomatis berakhir jika pemain mengklik ranjau atau berhasil mengungkap semua sel non-ranjau.
 
 ## Setup Instructions
