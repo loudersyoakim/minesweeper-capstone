@@ -21,7 +21,7 @@ Sebuah implementasi klasik dari game Minesweeper yang dibuat menggunakan React. 
   - **Pro:** Papan 15x30 dengan 99 ranjau.
 - **Timer:** Menghitung waktu permainan dari klik pertama.
 - **Mine Counter:** Menampilkan sisa ranjau (total ranjau dikurangi bendera).
-- **Tombol Reset:** Memulai ulang permainan dengan 
+- **Tombol Reset:** Memulai ulang permainan 
 - **Logika Kemenangan/Kekalahan:** Game otomatis berakhir jika pemain mengklik ranjau atau berhasil mengungkap semua sel non-ranjau.
 
 ## Setup Instructions
